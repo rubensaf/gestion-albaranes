@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilo general para body */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Root para colores */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #2563eb;
+  --secondary: #1e293b;
+  --accent: #22c55e;
+  --neutral: #f3f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #60a5fa;
+    --secondary: #334155;
+    --neutral: #1f2937;
+  }
+}
